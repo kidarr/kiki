@@ -24,14 +24,11 @@ uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "Expired (days): " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 hariini=`date -d "0 days" +"%Y-%m-%d"`
-sed -i '/#trws$/a\### '"$user $exp"'\
+sed -i '/#trojanws$/a\### '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/trojanws.json
-sed -i '/#trnone$/a\### '"$user $exp"'\
-},{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/trnone.json
 trojanlink1="trojan://${uuid}@${domain}:$tls?type=ws&security=tls&host=${domain}&path=/trojanws&sni=bug.com#TROJAN_TLS_${user}"
 trojanlink2="trojan://${uuid}@${domain}:$none?type=ws&security=none&host=${domain}&path=/trojanws#TROJAN_NON_TLS_${user}"
 systemctl restart xray@trojanws
-systemctl restart xray@trnone
 service cron restart
 clear
 echo -e ""
