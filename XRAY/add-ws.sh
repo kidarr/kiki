@@ -13,7 +13,7 @@ echo -e "\\E[0;41;36m      Add XRAY Vmess Account      \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
                 read -rp "Username : " -e user
-                CLIENT_EXISTS=$(grep -w $user /usr/local/etc/xray/config.json | wc -l)
+                CLIENT_EXISTS=$(grep -w $user /usr/local/etc/xray/vmessws.json | wc -l)
 
                 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
@@ -33,10 +33,10 @@ read -p "Expired (days): " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 sed -i '/#vmess$/a\### '"$user $exp"'\
-},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /usr/local/etc/xray/config.json
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /usr/local/etc/xray/vmessws.json
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#vmessgrpc$/a\### '"$user $exp"'\
-},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /usr/local/etc/xray/vmessgrpc.json
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /usr/local/etc/xray/config.json
 cat> /usr/local/etc/xray/$user-tls.json << EOF
       {
       "v": "2",
