@@ -18,7 +18,8 @@
       "tag": "Port-2053"
       },
       {
-            "port": "Port-2053",
+            "port": 2053,
+            "listen": "127.0.0.1",
             "protocol": "trojan",
             "settings": {
                 "clients": [
