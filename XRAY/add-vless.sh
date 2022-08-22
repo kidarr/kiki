@@ -37,7 +37,7 @@ hariini=`date -d "0 days" +"%Y-%m-%d"`
 sed -i '/#vless$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/vlessws.json
 sed -i '/#vlessgrpc$/a\### '"$user $exp"'\
-},{"id": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/vlessgrpc.json
+},{"id": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/config.json
 vlesslink1="vless://${uuid}@${domain}:$tls?type=ws&encryption=none&security=tls&host=${domain}&path=/vlessws&allowInsecure=1&sni=bug.com#VLESS_TLS_${user}"
 vlesslink2="vless://${uuid}@${domain}:$none?type=ws&encryption=none&security=none&host=${domain}&path=/vlessws#VLESS_NON_TLS_${user}"
 vlesslink3="vless://${uuid}@${domain}:$tls?mode=gun&security=tls&encryption=none&type=grpc&serviceName=/vlessgrpc&sni=bug.com#VLESS_GRPC_${user}"
