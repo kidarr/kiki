@@ -3,7 +3,7 @@
 # By Vinstechmy
 # ==================================
 source /var/lib/premium-script/ipvps.conf
-domain=$(cat /etc/xray/domain)
+domain=$(cat /usr/local/etc/xray/domain)
 clear
 echo -e "[ ${green}INFO${NC} ] Start " 
 sleep 0.5
