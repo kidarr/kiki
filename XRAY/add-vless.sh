@@ -42,7 +42,7 @@ vlesslink1="vless://${uuid}@${domain}:$tls?type=ws&encryption=none&security=tls&
 vlesslink2="vless://${uuid}@${domain}:$none?type=ws&encryption=none&security=none&host=${domain}&path=/vlessws#XRAY_VLESS_NON_TLS_${user}"
 vlesslink3="vless://${uuid}@${domain}:$tls?mode=gun&security=tls&encryption=none&type=grpc&serviceName=/vlessgrpc&sni=bug.com#XRAY_VLESS_GRPC_${user}"
 systemctl restart xray@vlessws
-systemctl restart xtay
+systemctl restart xray
 service cron restart
 clear
 echo -e ""
