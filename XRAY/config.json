@@ -13,7 +13,26 @@
         "address": "127.0.0.1"
       },
       "tag": "api"
-    },	
+    },
+{
+     "listen": "/run/xray/vmess_ws.sock",
+     "protocol": "vmess",
+      "settings": {
+            "clients": [
+               {
+                 "id": "09f31967-1fb8-43fd-bd30-a34370d0c0fe",
+                 "alterId": 0
+#vmess
+             }
+          ]
+       },
+       "streamSettings":{
+         "network": "ws",
+            "wsSettings": {
+                "path": "/vmessws"
+          }
+        }
+     },	
       {
         "listen": "/run/xray/vless_grpc.sock",
         "protocol": "vless",
