@@ -38,11 +38,11 @@ sed -i '/#trojanws$/a\### '"$user $exp"'\
 sed -i '/#trojangrpc$/a\### '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/config.json
 
-trojanlink1="trojan://${uuid}@${domain}:${tr}?type=ws&security=tls&host=${domain}&path=/trojanws&sni=bug.com#TROJAN_TLS_${user}"
-trojanlink2="trojan://${uuid}@${domain}:${tr}?allowInsecure=1&security=tls&type=grpc&serviceName=/trojangrpc&sni=bug.com#TROJAN_GRPC_${user}"
+trojanlink1="trojan://${uuid}@${domain}:${tr}?type=ws&security=tls&host=${domain}&path=/trojanws&sni=bug.com#XRAY_TROJAN_TLS_${user}"
+trojanlink2="trojan://${uuid}@${domain}:${tr}?allowInsecure=1&security=tls&type=grpc&serviceName=/trojangrpc&sni=bug.com#XRAY_TROJAN_GRPC_${user}"
 
 systemctl restart xray@trojanws
-systemctl restart xray@trojangrpc
+systemctl restart xray
 service cron restart
 clear
 echo -e ""
