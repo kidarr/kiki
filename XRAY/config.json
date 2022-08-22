@@ -1,11 +1,11 @@
 {
-    "log": {
-        "access": "/var/log/xray/access7.log",
-        "error": "/var/log/xray/error.log",
-        "loglevel": "info"
-    },
-    "inbounds": [
-        {
+  "log" : {
+    "access": "/var/log/xray/access.log",
+    "error": "/var/log/xray/error.log",
+    "loglevel": "info"
+  },
+  "inbounds": [
+      {
       "listen": "127.0.0.1",
       "port": 10085,
       "protocol": "dokodemo-door",
@@ -13,15 +13,53 @@
         "address": "127.0.0.1"
       },
       "tag": "api"
-    },
-        {
+    },	
+      {
+        "listen": "/run/xray/vless_grpc.sock",
+        "protocol": "vless",
+        "settings": {
+         "decryption":"none",
+           "clients": [
+             {
+               "id": "${uuid}"
+#vlessgrpc
+             }
+          ]
+       },
+          "streamSettings":{
+             "network": "grpc",
+             "grpcSettings": {
+                "serviceName": "/vlessgrpc"
+           }
+        }
+     },
+     {
+      "listen": "/run/xray/vmess_grpc.sock",
+     "protocol": "vmess",
+      "settings": {
+            "clients": [
+               {
+                 "id": "${uuid}",
+                 "alterId": 0
+#vmessgrpc
+             }
+          ]
+       },
+       "streamSettings":{
+         "network": "grpc",
+            "grpcSettings": {
+                "serviceName": "/vmessgrpc"
+          }
+        }
+     },
+     {
         "listen": "/run/xray/trojan_grpc.sock",
         "protocol": "trojan",
         "settings": {
           "decryption":"none",
              "clients": [
                {
-                 "password": "08a199f7-c18a-40db-9328-a7abc644004a"
+                 "password": "${uuid}"
 #trojangrpc
                }
            ]
@@ -32,9 +70,30 @@
                "serviceName": "/trojangrpc"
          }
       }
-   }
-    ],
-    "outbounds": [
+   },
+   {
+    "listen": "127.0.0.1",
+    "port": "30310",
+    "protocol": "shadowsocks",
+    "settings": {
+        "clients": [
+          {
+             "method": "aes-128-gcm",
+             "password": "${uuid}"
+#ssgrpc
+           }
+         ],
+           "network": "tcp,udp"
+      },
+    "streamSettings":{
+     "network": "grpc",
+        "grpcSettings": {
+           "serviceName": "ssgrpc"
+          }
+       }
+    }	
+  ],
+  "outbounds": [
     {
       "protocol": "freedom",
       "settings": {}
