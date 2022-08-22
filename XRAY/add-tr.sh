@@ -36,7 +36,7 @@ hariini=`date -d "0 days" +"%Y-%m-%d"`
 sed -i '/#trojanws$/a\### '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/trojanws.json
 sed -i '/#trojangrpc$/a\### '"$user $exp"'\
-},{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/trojangrpc.json
+},{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/config.json
 
 trojanlink1="trojan://${uuid}@${domain}:${tr}?type=ws&security=tls&host=${domain}&path=/trojanws&sni=bug.com#TROJAN_TLS_${user}"
 trojanlink2="trojan://${uuid}@${domain}:${tr}?allowInsecure=1&security=tls&type=grpc&serviceName=/trojangrpc&sni=bug.com#TROJAN_GRPC_${user}"
