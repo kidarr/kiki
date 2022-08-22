@@ -89,7 +89,7 @@ vmesslink1="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-tls.json)"
 vmesslink2="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
 vmesslink3="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-tlsgrpc.json)"
 systemctl restart xray
-systrmctl restart xray@vmessgrpc
+systrmctl restart xray@vmessws
 service cron restart
 clear
 echo -e ""
