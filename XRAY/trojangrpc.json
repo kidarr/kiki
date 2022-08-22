@@ -22,7 +22,7 @@
                 "network": "gun",
                 "security": "tls",
                 "tlsSettings": {
-                    "serverName": "sg.vinstechmy.xyz",
+                    "serverName": "sgtest.vinstechmy.xyz",
                     "alpn": [
                         "h2"
                     ],
@@ -34,7 +34,7 @@
                     ]
                 },
                 "grpcSettings": {
-                    "serviceName": "GunService"
+                    "serviceName": "/trojangrpc"
                 }
             }
         }
