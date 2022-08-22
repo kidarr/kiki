@@ -7,30 +7,27 @@ domain=$(cat /root/domain)
 sleep 1
 mkdir -p /etc/xray 
 echo -e "[ ${green}INFO${NC} ] Checking... "
+apt update -y
+apt upgrade -y
+apt install socat -y
+apt install python -y
+apt install curl -y
+apt install wget -y
+apt install sed -y
+apt install nano -y
+apt install python3 -y
 apt install iptables iptables-persistent -y
-sleep 1
-echo -e "[ ${green}INFO$NC ] Setting ntpdate"
-ntpdate pool.ntp.org 
-timedatectl set-ntp true
-sleep 1
-echo -e "[ ${green}INFO$NC ] Enable chronyd"
-systemctl enable chronyd
-systemctl restart chronyd
-sleep 1
-echo -e "[ ${green}INFO$NC ] Enable chrony"
-systemctl enable chrony
-systemctl restart chrony
-timedatectl set-timezone Asia/Kuala_Lumpur
-sleep 1
-echo -e "[ ${green}INFO$NC ] Setting chrony tracking"
-chronyc sourcestats -v
-chronyc tracking -v
-echo -e "[ ${green}INFO$NC ] Setting dll"
-apt clean all && apt update
 apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
 apt install socat cron bash-completion ntpdate -y
 ntpdate pool.ntp.org
 apt -y install chrony
+timedatectl set-ntp true
+systemctl enable chronyd && systemctl restart chronyd
+systemctl enable chrony && systemctl restart chrony
+timedatectl set-timezone Asia/Kuala_Lumpur
+chronyc sourcestats -v
+chronyc tracking -v
+date
 apt install zip -y
 apt install curl pwgen openssl netcat cron -y
 
