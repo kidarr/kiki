@@ -40,7 +40,7 @@ sed -i '/#vmessgrpc$/a\### '"$user $exp"'\
 cat> /usr/local/etc/xray/$user-tls.json << EOF
       {
       "v": "2",
-      "ps": "VMESS_TLS_${user}",
+      "ps": "XRAY_VMESS_TLS_${user}",
       "add": "${domain}",
       "port": "${tls}",
       "id": "${uuid}",
@@ -55,7 +55,7 @@ EOF
 cat> /usr/local/etc/xray/$user-none.json << EOF
       {
       "v": "2",
-      "ps": "VMESS_NON_TLS_${user}",
+      "ps": "XRAY_VMESS_NON_TLS_${user}",
       "add": "${domain}",
       "port": "${none}",
       "id": "${uuid}",
@@ -70,7 +70,7 @@ EOF
 cat > /usr/local/etc/xray/$user-tlsgrpc.json << EOF
       {
       "v": "2",
-      "ps": "VMESS_GRPC_${user}",
+      "ps": "XRAY_VMESS_GRPC_${user}",
       "add": "${domain}",
       "port": "${tls}",
       "id": "${uuid}",
