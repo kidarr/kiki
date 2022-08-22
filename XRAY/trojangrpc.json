@@ -6,38 +6,24 @@
     },
     "inbounds": [
         {
-            "listen": "/run/xray/trojan_grpc.sock",
-            "protocol": "trojan",
-            "settings": {
-                "clients": [
-                    {
-                        "password": "08a199f7-c18a-40db-9328-a7abc644004a"
-
+        "listen": "/run/xray/trojan_grpc.sock",
+        "protocol": "trojan",
+        "settings": {
+          "decryption":"none",
+             "clients": [
+               {
+                 "password": "08a199f7-c18a-40db-9328-a7abc644004a"
 #trojangrpc
-                    }
-                ],
-                "decryption": "none"
-            },
-            "streamSettings": {
-                "network": "gun",
-                "security": "tls",
-                "tlsSettings": {
-                    "serverName": "sgtest.vinstechmy.xyz",
-                    "alpn": [
-                        "h2"
-                    ],
-                    "certificates": [
-                        {
-                            "certificateFile": "/usr/local/etc/xray/xray.crt",
-                            "keyFile": "/usr/local/etc/xray/xray.key"
-                        }
-                    ]
-                },
-                "grpcSettings": {
-                    "serviceName": "/trojangrpc"
-                }
-            }
-        }
+               }
+           ]
+        },
+         "streamSettings":{
+         "network": "grpc",
+           "grpcSettings": {
+               "serviceName": "trojan-grpc"
+         }
+      }
+   }
     ],
     "outbounds": [
         {
