@@ -20,7 +20,7 @@
          "streamSettings":{
          "network": "grpc",
            "grpcSettings": {
-               "serviceName": "trojan-grpc"
+               "serviceName": "/trojangrpc"
          }
       }
    }
