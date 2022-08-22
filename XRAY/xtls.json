@@ -11,7 +11,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "${uuid}",
+                        "id": "47e22fdd-5969-40ce-808e-8b5e9f3e3733",
                         "flow": "xtls-rprx-direct",
                         "level": 0,
                         "email": ""
