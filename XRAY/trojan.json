@@ -23,7 +23,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "${uuid}",
+                        "id": "09f31967-1fb8-43fd-bd30-a34370d0c0fe",
                         "password": "xxxxx"
 #tr
                     }
