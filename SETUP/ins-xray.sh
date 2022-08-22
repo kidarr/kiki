@@ -795,28 +795,6 @@ WantedBy=multi-user.target
 
 EOF
 
-cat> /etc/systemd/system/xray@.service << END
-[Unit]
-Description=Xray Service
-Documentation=https://Vinstechmy-Project.net https://github.com/XTLS/Xray-core
-After=network.target nss-lookup.target
-
-[Service]
-User=root
-CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
-AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
-NoNewPrivileges=true
-ExecStart=/usr/local/bin/xray run -config /usr/local/etc/xray/%i.json
-Restart=on-failure
-RestartPreventExitStatus=23
-LimitNPROC=10000
-LimitNOFILE=1000000
-
-[Install]
-WantedBy=multi-user.target
-
-END
-
 cat > /etc/systemd/system/runn.service <<EOF
 [Unit]
 Description=Multiport-Websocket Service
