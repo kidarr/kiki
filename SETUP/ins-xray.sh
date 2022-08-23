@@ -435,7 +435,7 @@ cat> /usr/local/etc/xray/xtls.json << END
        },
     "inbounds": [
       {
-            "port": 443,
+            "port": 2053,
             "protocol": "vless",
             "settings": {
                 "clients": [
@@ -730,21 +730,15 @@ systemctl restart xray@trojanws
 
 # enable xray vmess grpc
 systemctl daemon-reload
-systemctl enable xray@vmessgrpc
-systemctl start xray@vmessgrpc
-systemctl restart xray@vmessgrpc
+systemctl enable xray@xtls
+systemctl start xray@xtls
+systemctl restart xray@xtls
 
 # enable xray vless grpc
 systemctl daemon-reload
-systemctl enable xray@vlessgrpc
-systemctl start xray@vlessgrpc
-systemctl restart xray@vlessgrpc
-
-# enable xray trojan grpc
-systemctl daemon-reload
-systemctl enable xray@trojangrpc
-systemctl start xray@trojangrpc
-systemctl restart xray@trojangrpc
+systemctl enable xray@trojan
+systemctl start xray@trojan
+systemctl restart xray@trojan
 
 sleep 1
 wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/vinstechmy/multiport-websocket/main/XRAY/add-ws.sh" && chmod +x /usr/bin/add-ws
