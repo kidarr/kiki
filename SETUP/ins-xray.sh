@@ -585,6 +585,11 @@ Restart=on-abort
 WantedBy=multi-user.target
 EOF
 
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2053 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 1315 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2053 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 1315 -j ACCEPT
+
 #nginx config
 cat >/etc/nginx/conf.d/xray.conf <<EOF
     server {
