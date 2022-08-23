@@ -183,10 +183,10 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        restart
            echo ""
        read -n1 -r -p " Press any key to continue..."
+       menu
+    elif [[ $x -eq 21 ]]; then
        clear
        speedtest
-    elif [[ $x -eq 21 ]]; then
-       add-vless
            echo ""
        read -n1 -r -p " Press any key to continue..."
        menu
