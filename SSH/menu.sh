@@ -60,7 +60,7 @@ echo -e "\e[36m╘════════════════════�
  [\033[1;36m•12\033[0m]  Check Trojan Account
  [\033[1;36m•13\033[0m]  Delete Trojan Account
  [\033[1;36m•14\033[0m]  Renew Trojan Account
- [\033[1;36m•15\033[0m]  Renew Trojan Config"
+ [\033[1;36m•15\033[0m]  Check Trojan Config"
 echo -e  "\e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;41;36m                SYSTEM MENU                 \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
