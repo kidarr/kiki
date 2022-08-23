@@ -11,7 +11,7 @@ tls="$(cat ~/log-install.txt | grep -w "VLESS WS TLS" | cut -d: -f2|sed 's/ //g'
 none="$(cat ~/log-install.txt | grep -w "VLESS WS None TLS" | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 		echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-		echo -e "\E[0;41;36m           Add XRAY Vless Account          \E[0m"
+		echo -e "\E[0;41;36m      Add XRAY Vless Account      \E[0m"
 		echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
 		read -rp "Username : " -e user
@@ -36,13 +36,9 @@ exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 sed -i '/#vless$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/vlessws.json
-sed -i '/#vlessgrpc$/a\### '"$user $exp"'\
-},{"id": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/config.json
 vlesslink1="vless://${uuid}@${domain}:$tls?type=ws&encryption=none&security=tls&host=${domain}&path=/vlessws&allowInsecure=1&sni=bug.com#XRAY_VLESS_TLS_${user}"
 vlesslink2="vless://${uuid}@${domain}:$none?type=ws&encryption=none&security=none&host=${domain}&path=/vlessws#XRAY_VLESS_NON_TLS_${user}"
-vlesslink3="vless://${uuid}@${domain}:$tls?mode=gun&security=tls&encryption=none&type=grpc&serviceName=/vlessgrpc&sni=bug.com#XRAY_VLESS_GRPC_${user}"
 systemctl restart xray@vlessws
-systemctl restart xray
 service cron restart
 clear
 echo -e ""
@@ -51,19 +47,15 @@ echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "Port TLS          : $tls"
 echo -e "Port None TLS     : $none"
-echo -e "Port GRPC         : $tls"
 echo -e "ID                : ${uuid}"
 echo -e "Security          : TLS"
 echo -e "Encryption        : None"
-echo -e "Type              : WS & GRPC"
+echo -e "Network           : WS"
 echo -e "Path              : /vlessws"
-echo -e "GRPC Path         : /vlessgrpc"
 echo -e "════════════════════════════════════════════"
 echo -e "Link WS TLS       : ${vlesslink1}"
 echo -e "════════════════════════════════════════════"
 echo -e "Link WS None TLS  : ${vlesslink2}"
-echo -e "════════════════════════════════════════════"
-echo -e "Link GRPC         : ${vlesslink3}"
 echo -e "════════════════════════════════════════════"
 echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
