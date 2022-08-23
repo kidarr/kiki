@@ -37,26 +37,29 @@ sed -i '/#trojanws$/a\### '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/trojanws.json
 
 trojanlink1="trojan://${uuid}@${domain}:${tr}?type=ws&security=tls&host=${domain}&path=/trojanws&sni=bug.com#XRAY_TROJAN_TLS_${user}"
-
+trojanlink2="trojan://${uuid}@${domain}:${trnone}?type=ws&security=none&host=${domain}&path=/trojanws#TROJAN_NON_TLS_${user}"
 systemctl restart xray@trojanws
 service cron restart
 clear
 echo -e ""
-echo -e "════════════[XRAY TROJAN ACCOUNT]════════════"
+echo -e "════════════[XRAY TROJAN WS]════════════"
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "Port TLS          : $tr"
+echo -e "Port None TLS     : $trnone"
 echo -e "ID                : ${uuid}"
 echo -e "Security          : TLS"
 echo -e "Encryption        : None"
 echo -e "Network           : WS"
 echo -e "Path              : /trojanws"
-echo -e "═════════════════════════════════════════════"
+echo -e "════════════════════════════════════════"
 echo -e "Link WS TLS       : ${trojanlink1}"
-echo -e "═════════════════════════════════════════════"
+echo -e "════════════════════════════════════════"
+echo -e "Link WS None TLS  : ${trojanlink2}"
+echo -e "════════════════════════════════════════"
 echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
-echo -e "═════════════════════════════════════════════"
+echo -e "════════════════════════════════════════"
 echo -e ""
 echo -e "Autoscript By Vinstechmy"
 echo -e ""
