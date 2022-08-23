@@ -39,10 +39,8 @@ sed -i '/#trojangrpc$/a\### '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/config.json
 
 trojanlink1="trojan://${uuid}@${domain}:${tr}?type=ws&security=tls&host=${domain}&path=/trojanws&sni=bug.com#XRAY_TROJAN_TLS_${user}"
-trojanlink2="trojan://${uuid}@${domain}:${tr}?allowInsecure=1&security=tls&type=grpc&serviceName=/trojangrpc&sni=bug.com#XRAY_TROJAN_GRPC_${user}"
 
 systemctl restart xray@trojanws
-systemctl restart xray
 service cron restart
 clear
 echo -e ""
@@ -50,17 +48,14 @@ echo -e "════════════[XRAY TROJAN ACCOUNT]════�
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "Port TLS          : $tr"
-echo -e "Port GRPC         : $tr"
 echo -e "ID                : ${uuid}"
 echo -e "Security          : TLS"
 echo -e "Encryption        : None"
-echo -e "Type              : WS & GRPC"
+echo -e "Network           : WS"
 echo -e "Path              : /trojanws"
 echo -e "GRPC Path         : /trojangrpc"
 echo -e "═════════════════════════════════════════════"
 echo -e "Link WS TLS       : ${trojanlink1}"
-echo -e "═════════════════════════════════════════════"
-echo -e "Link GRPC         : ${trojanlink2}"
 echo -e "═════════════════════════════════════════════"
 echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
