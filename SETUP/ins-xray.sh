@@ -762,5 +762,5 @@ wget -q -O /usr/bin/renew-user "https://raw.githubusercontent.com/vinstechmy/mul
 wget -q -O /usr/bin/certxray "https://raw.githubusercontent.com/vinstechmy/multiport-websocket/main/XRAY/cert.sh" && chmod +x /usr/bin/certxray
 
 cd
-mv /root/domain /etc/xray/ 
+mv /root/domain /usr/local/etc/xray/ 
 rm -f ins-xray.sh  
