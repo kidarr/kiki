@@ -1,0 +1,40 @@
+{
+  "log": {
+    "access": "/var/log/xray/access5.log",
+    "error": "/var/log/xray/error.log",
+    "loglevel": "info"
+       },
+    "inbounds": [
+        {
+            "port": 1310,
+            "listen": "127.0.0.1",
+            "protocol": "trojan",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "26b170a2-79d7-44f5-b2c0-f6f7a6672af2",
+                        "password": "xxxxx"
+#tr
+                    }
+                ],
+                "fallbacks": [
+                    {
+                        "dest": 80
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "none",
+                "tcpSettings": {
+                    "acceptProxyProtocol": true
+                }
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ]
+}
