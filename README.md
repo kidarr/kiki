@@ -41,6 +41,14 @@ VinstechmyFreeAutoscriptsLite
   ```
  
 </b>
+## ⏩ MULTIPORT WEBSOCKET AUTOSCRIPT EXAMPLE ⏪
+<b>
+<br>
+</b>
+<p align="center">
+<img src="" width="400" title="Autoscript-Lite">
+</p>
+
 
 ## ⏩ DONATE ⏪
 <b>
