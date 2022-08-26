@@ -49,7 +49,7 @@ VinstechmyFreeAutoscriptsLite
 
 </b>
 <p align="center">
-<img src="https://raw.githubusercontent.com/vinstechmy/dns-netflix/main/2FB21DB5-B04E-40A1-BD1A-9F683EE216BF.jpeg?token=GHSAT0AAAAAABW7DI2R2IVV53M4UB4OH5ZCYYF67FQ" width="400" title="Autoscript-Lite">
+<img src="https://raw.githubusercontent.com/vinstechmy/multiport-websocket/main/OTHERS/45394CBC-420D-4564-9B8B-C475D89B584F.jpeg?" width="400" title="Autoscript-Lite">
 </p>
 
 
