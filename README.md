@@ -10,7 +10,7 @@
 
 <img src="https://img.shields.io/badge/Service-Multiport(Websocket)-orange">
 
-## ⏩ PLEASE FOLLOW BELOW STEP AFTER INSTALLATION IS DONE ⏪
+## ⏩ PLEASE FOLLOW STEP BELOW AFTER INSTALLATION IS DONE ⏪
 <b>
 
 1.
