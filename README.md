@@ -55,6 +55,11 @@ VinstechmyFreeAutoscriptsLite
 <img src="https://raw.githubusercontent.com/vinstechmy/multiport-websocket/main/OTHERS/3CD4DA4E-A28F-4E6E-81DD-7B70A87E1B7B.jpeg" width="400" title="Autoscript-Lite">
 </p>
 
+</b>
+<p align="center">
+<img src="https://raw.githubusercontent.com/vinstechmy/multiport-websocket/main/OTHERS/3CD4DA4E-A28F-4E6E-81DD-7B70A87E1B7B.jpeg" width="400" title="Autoscript-Lite">
+</p>
+
 
 ## ⏩ DONATE ⏪
 <b>
