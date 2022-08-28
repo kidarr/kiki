@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <h2 align="center">
 <hr>
-🔱 Multiport Websocket Autoscript Edition By Vinstechmy (FREE !)🔱
+🚀 Multiport Websocket Autoscript Edition By Vinstechmy (FREE !)🚀
 <h2><hr>
   
 <h2 align="center"> ♦️Supported Linux Distribution♦️</h2>
@@ -10,7 +10,7 @@
 
 <img src="https://img.shields.io/badge/Service-Multiport(Websocket)-orange">
 
-## ⏩ PLEASE FOLLOW STEP BELOW AFTER INSTALLATION IS DONE ⏪
+## ⚠️ PLEASE FOLLOW STEP BELOW AFTER INSTALLATION IS DONE ⚠️
 <b>
 
 1.
@@ -40,6 +40,7 @@ restart
 ✅ CHECK LOGIN USER <br>
 ✅ CHECK CREATED CONFIG <br>
 ✅ AUTOMATIC CLEAR LOG <br>
+✅ AUTOMATIC VPS REBOOT <br>
 ✅ BACKUP & RESTORE <br>
 <br>
 <br>
