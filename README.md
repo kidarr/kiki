@@ -10,11 +10,25 @@
 
 <img src="https://img.shields.io/badge/Service-Multiport(Websocket)-orange">
 
-## ⏩ MULTIPORT AUTOSCRIPT-LITE BY VINSTECHMY ⏪
+## ⏩ PLEASE FOLLOW BELOW STEP AFTER INSTALLATION IS DONE ⏪
 <b>
-JIKA ADA SEBARANG MASALAH DENGAN AUTOSCRIPT SILA TELEGRAM SAYA DI http://t.me/vinstechmy
 <br>
-<b>
+1.
+
+  ```html
+mkdir -p /run/xray
+  ```
+2.
+
+  ```html
+chown -R www-data:www-data /run/xray
+  ```
+3
+
+  ```html
+restart
+  ```
+</b>
   
 ## ⏩ MULTIPORT WEBSOCKET AUTOSCRIPT DETAILS ⏪
 <b>
