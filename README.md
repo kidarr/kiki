@@ -12,22 +12,8 @@
 
 ## ⚠️ PLEASE FOLLOW STEP BELOW AFTER INSTALLATION IS DONE ⚠️
 <b>
-
-1.
-
-  ```html
-mkdir -p /run/xray
-  ```
-2.
-
-  ```html
-chown -R www-data:www-data /run/xray
-  ```
-3.
-
-  ```html
-restart
-  ```
+ Bug Fixed :
+ 1. Service None TLS not running after vps rebooted (Fixed ✅)
 </b>
   
 ## ⏩ MULTIPORT WEBSOCKET AUTOSCRIPT DETAILS ⏪
