@@ -12,7 +12,7 @@
 
 ## ⏩ PLEASE FOLLOW BELOW STEP AFTER INSTALLATION IS DONE ⏪
 <b>
-<br>
+
 1.
 
   ```html
@@ -23,7 +23,7 @@ mkdir -p /run/xray
   ```html
 chown -R www-data:www-data /run/xray
   ```
-3
+3.
 
   ```html
 restart
