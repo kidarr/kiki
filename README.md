@@ -12,8 +12,8 @@
 
 ## ⚠️ PLEASE FOLLOW STEP BELOW AFTER INSTALLATION IS DONE ⚠️
 <b>
- Bug Fixed :
- 1. Service None TLS not running after vps rebooted (Fixed ✅)
+ Bug Fixed : <br>
+ 1. Service None TLS not running after vps rebooted (Fixed ✅) <br>
 </b>
   
 ## ⏩ MULTIPORT WEBSOCKET AUTOSCRIPT DETAILS ⏪
