@@ -15,7 +15,7 @@
  Bug Fixed : <br>
  1. Service None TLS not running after vps rebooted (Fixed ✅) <br>
 <br>
- Next Update : <br>
+ New Update : <br>
  1. Trojan-Go Websocket Protocol (Update ✅) <br>
 </b>
   
