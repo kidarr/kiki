@@ -16,7 +16,7 @@
  1. Service None TLS not running after vps rebooted (Fixed ✅) <br>
 <br>
  Next Update : <br>
- 1. Trojan-Go Websocket Protocol (8080) <br>
+ 1. Trojan-Go Websocket Protocol (Update ✅) <br>
 </b>
   
 ## ⏩ MULTIPORT WEBSOCKET AUTOSCRIPT DETAILS ⏪
@@ -26,6 +26,7 @@
 ✅ XRAY TROJAN WEBSOCKET TLS & NON-TLS <br>
 ✅ XRAY VLESS TCP XTLS <br>
 ✅ XRAY TROJAN TCP TLS <br>
+✅ TROJAN GO WS <br>
 ✅ CHECK LOGIN USER <br>
 ✅ CHECK CREATED CONFIG <br>
 ✅ AUTOMATIC CLEAR LOG <br>
