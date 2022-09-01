@@ -13,7 +13,7 @@
 ## ⚠️ PLEASE README ⚠️
 <b>
  Bug Fixed : <br>
- 1. Service None TLS not running after vps rebooted (Fixed ✅) <br>
+ 1. None TLS services not running after vps rebooted (Fixed ✅) <br>
 <br>
  Next Update : <br>
  1.Clash Yaml File For XRAY <br>
