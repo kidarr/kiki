@@ -15,6 +15,9 @@
  Bug Fixed : <br>
  1. Service None TLS not running after vps rebooted (Fixed ✅) <br>
 <br>
+ Next Update : <br>
+ 1.Clash Yaml File For XRAY <br>
+<br>
  New Update : <br>
  1. Trojan-Go Websocket Protocol (Update ✅) <br>
 </b>
