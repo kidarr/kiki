@@ -16,10 +16,11 @@
  1. None TLS services not running after vps rebooted (Fixed ✅) <br>
 <br>
  Next Update : <br>
- 1.Clash Yaml File For XRAY <br>
+ 1.<br>
 <br>
  New Update : <br>
  1. Trojan-Go Websocket Protocol (Update ✅) <br>
+ 2. YAML Link Generator (Update ✅) <br>
 </b>
   
 ## ⏩ MULTIPORT WEBSOCKET AUTOSCRIPT DETAILS ⏪
@@ -30,6 +31,7 @@
 ✅ XRAY VLESS TCP XTLS <br>
 ✅ XRAY TROJAN TCP TLS <br>
 ✅ TROJAN GO WS <br>
+✅ YAML LINK <br>
 ✅ CHECK LOGIN USER <br>
 ✅ CHECK CREATED CONFIG <br>
 ✅ AUTOMATIC CLEAR LOG <br>
