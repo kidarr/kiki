@@ -64,7 +64,7 @@ VinstechmyFreeAutoscriptsLite
 
 </b>
 <p align="center">
-<img src="https://raw.githubusercontent.com/vinstechmy/multiport-websocket/main/OTHERS/64AE48D9-F91E-4E46-A744-3A30C9444D9D.jpeg" width="400" title="Autoscript-Lite">
+<img src="https://raw.githubusercontent.com/vinstechmy/multiport-websocket/main/OTHERS/E24D567A-2104-4B3E-A448-84FE09561448.jpeg" width="400" title="Autoscript-Lite">
 </p>
 
 </b>
