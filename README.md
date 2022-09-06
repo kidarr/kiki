@@ -52,7 +52,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 ♦️ License Key<br> 
  
   ```html
-VinstechmyFreeAutoscriptsLite
+VinstechmyFreeAutoscriptLite
   ```
 
 </b>
