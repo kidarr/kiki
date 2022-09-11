@@ -76,7 +76,4 @@ VinstechmyFreeAutoscriptLite
 <b>
 <a href="https://paypal.me/vinstechmy" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=paypal&label=Paypal&message=Click%20Here&color=blue"></a>
 <br>
-<p align="center">
-<img src="https://raw.githubusercontent.com/vinstechmy/multiport-websocket/main/OTHERS/ECEA5755-1A0B-441F-8F16-4D174CE4499C.png" width="400" title="Autoscript-Lite">
-</p>
 <b>
