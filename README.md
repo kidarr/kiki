@@ -69,9 +69,8 @@ VinstechmyFreeAutoscriptLite
 
 </b>
 <p align="center">
-<img src="https://user-images.githubusercontent.com/82468311/189027374-14013ca9-93f4-4723-b72a-2abef5912354.png" width="400" title="Autoscript-Lite">
+<img src="https://user-images.githubusercontent.com/82468311/189510353-4ba84ac1-2db7-45a7-be33-e2311ec0df0a.png" width="400" title="Autoscript-Lite">
 </p>
-
 
 ## ⏩ DONATE ⏪
 <b>
