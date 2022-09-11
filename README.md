@@ -14,6 +14,7 @@
 <b>
  Bug Fixed : <br>
  1. None TLS services not running after vps rebooted (Fixed ✅) <br>
+ 2. Error to backup vps data <br>
 <br>
  Next Update : <br>
  1. GRPC Protocol <br>
