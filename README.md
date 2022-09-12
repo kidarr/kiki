@@ -12,17 +12,10 @@
 
 ## ⚠️ PLEASE README ⚠️
 <b>
- Bug Fixed : <br>
- 1. None TLS services not running after vps rebooted (Fixed ✅) <br>
- 2. Error to backup vps data (Fixed ✅) <br>
 <br>
  Next Update : <br>
  1. GRPC Protocol <br>
 <br>
- New Update : <br>
- 1. Trojan-Go Websocket Protocol (Update ✅) <br>
- 2. YAML Link Generator (Update ✅) <br>
- 3. DNS Changer & Netflix Content Checker (Update ✅)<br>
 </b>
   
 ## ⏩ MULTIPORT WEBSOCKET AUTOSCRIPT DETAILS ⏪
