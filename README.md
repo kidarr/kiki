@@ -72,7 +72,7 @@ VinstechmyFreeAutoscriptLite
 <img src="https://user-images.githubusercontent.com/82468311/189510353-4ba84ac1-2db7-45a7-be33-e2311ec0df0a.png" width="400" title="Autoscript-Lite">
 </p>
 
-## ⏩ DONATE ⏪
+## ⏩ BUY ME A COFFEE ? ⏪
 <b>
 <br>
 <p align="center">
