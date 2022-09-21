@@ -12,10 +12,15 @@
 ## ⚠️ PLEASE README ⚠️
 <b>
 <br>
- Next Update : <br>
+SILA PASTIKAN SETTING DOMAIN DI CLOUDFLARE ANDA SEPERTI DIBAWAH (SSL/TLS SETTINGS)<br>
 <br>
- 1. GRPC Protocol <br>
+
+![image](https://user-images.githubusercontent.com/82468311/191471897-986ebe25-5330-4997-8a44-5468b422482a.png) <br>
+
+![image](https://user-images.githubusercontent.com/82468311/191472903-b55cd39a-8909-4f7c-b3ad-013cb3c91282.png)
+
 <br>
+</b>
 </b>
   
 ## ⏩ MULTIPORT WEBSOCKET AUTOSCRIPT DETAILS ⏪
