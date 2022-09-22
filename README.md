@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <h2 align="center">
 <hr>
-🚀 Multiport Websocket Autoscript Edition By Vinstechmy (FREE !)🚀
+🚀 Multiport Websocket Autoscript Edition By Kiki (FREE !)🚀
 <h2><hr>
   
 <h2 align="center"> ♦️Supported Linux Distribution♦️</h2>
