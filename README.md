@@ -82,10 +82,3 @@ VinstechmyFreeAutoscriptLite
 <p align="center">
 <img src="https://user-images.githubusercontent.com/82468311/189510353-4ba84ac1-2db7-45a7-be33-e2311ec0df0a.png" width="400" title="Autoscript-Lite">
 </p>
-
-## ⏩ BUY ME A COFFEE ? ⏪
-<b>
-<br>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/82468311/189573622-9b165a67-4ae7-4354-bd8d-5fad54c266fa.JPG" width="300" title="Autoscript-Lite">
-<b>
