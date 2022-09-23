@@ -65,20 +65,3 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
   ```html
 VinstechmyFreeAutoscriptLite
   ```
-
-</b>
-
-## ⏩ MULTIPORT WEBSOCKET AUTOSCRIPT EXAMPLE ⏪
-<b>
-</b>
-<br>
-
-</b>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/82468311/189510325-482a7fb3-5002-459d-867f-6e573b2fb45e.png" width="400" title="Autoscript-Lite">
-</p>
-
-</b>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/82468311/189510353-4ba84ac1-2db7-45a7-be33-e2311ec0df0a.png" width="400" title="Autoscript-Lite">
-</p>
